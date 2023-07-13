@@ -219,11 +219,11 @@ body{
 }
 
 .logo{
-	display: block;
-	width: 250px;
-	position: fixed;
-	top: 30px;
-	left: 30px;
+    display: block;
+    width: 250px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
 }
 
 .logo img{
@@ -235,16 +235,16 @@ body{
     background-color: transparent;  /*透明の背景*/
     position: absolute;             /*ハンバーガーの横線の位置を決めるための基準*/
     cursor: pointer;                /*リンクを示すカーソルを表示（指差しマーク）*/
-	top: 10px;
-	right: 10px;
+    top: 10px;
+    right: 10px;
     height: 40px;
-	width: 40px;                    /*高さと同じ幅*/
+    width: 40px;                    /*高さと同じ幅*/
 	}
 
 .icon span {
     position: absolute;       /*親要素である#hamburgerを基準に位置を指定*/
-	top: 20px;
-	right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+    top: 20px;
+    right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
     width: 30px;              /*横線の幅*/
     height: 3px;              /*横線の高さ*/
     background-color: white;  /*横線を白色*/
@@ -289,8 +289,8 @@ body{
 }
 
 .hamburger-list ul li {
-	text-align: center;
-	height: 50px; /*メニューの高さ*/
+    text-align: center;
+    height: 50px; /*メニューの高さ*/
 }
 
 nav.hamburger-list{
@@ -298,23 +298,23 @@ nav.hamburger-list{
 }
 
 .hamburger-list ul li a {
-	height:0px;
+    height:0px;
     margin-left:0px;
     color:#FFF;
     text-decoration:none;
     letter-spacing:.1em;
-	padding: 5px 10px;
+    padding: 5px 10px;
 }
 
 .hamburger-list ul li a:hover {
-		background: #222;
-		height: 10rem;
-		text-align: center;
+    background: #222;
+    height: 10rem;
+    text-align: center;
 }
 
 ul {
-		flex-direction: column;
-		text-align: center;
+    flex-direction: column;
+    text-align: center;
 }
 }
 
