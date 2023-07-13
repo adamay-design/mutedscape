@@ -44,7 +44,7 @@ nav{
 	display: block;
 	width: 250px;
 	position: fixed;
-	top: 30px;
+	top: 25px;
 	left: 40px;
 }
 
@@ -120,7 +120,7 @@ nav{
 ===================================*/
 .gallery{
     columns: 4;/*段組みの数*/
-    padding: 20px;/*ギャラリー左右に余白をつける*/
+    padding: 10px;/*ギャラリー左右に余白をつける*/
     margin-top: 80px;
     }
     
@@ -188,15 +188,15 @@ body{
 }
 
 .logo{
-    display: block;
-    width: 250px;
-    position: fixed;
-    top: 30px;
-    left: 30px;
+	display: block;
+	width: 250px;
+	position: fixed;
+	top: 25px;
+	left: 30px;
 }
 
 .logo img{
-    width:100%;
+    width:90%;
     height:auto;
 }
     

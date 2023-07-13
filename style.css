@@ -45,7 +45,7 @@ nav{
 	display: block;
 	width: 250px;
 	position: fixed;
-	top: 30px;
+	top: 25px;
 	left: 40px;
 }
 
@@ -168,26 +168,32 @@ nav{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-  
-  @media screen and (min-width: 768px) {
-    /* kv */
-    .kv{
-      min-width: 768px;
-    }
-  
-    .kv .main-copy{
-      font-size: 60px;
-    }
-  
-    .kv .sub-copy{
-      font-size: 30px;
-    }
-  
-    /* video */
-    .video{
-      min-width: 768px;
-    }
-  }
+
+@media screen and (min-width: 768px) {
+
+body{
+    min-width:400px;
+}
+
+/* kv */
+.kv{
+    min-width: 768px;
+}
+
+.kv .main-copy{
+    font-size: 60px;
+}
+
+.kv .sub-copy{
+    font-size: 30px;
+}
+
+/* video */
+.video{
+    min-width: 768px;
+}
+}
+ 
 
 .hamburger-list {
     display: none;	/*ハンバーガーメニューのリスト（スマホ用）を非表示*/
@@ -201,7 +207,7 @@ nav{
 
 body{
     margin: 0;
-    min-width:960px;
+    min-width:700px;
     background:#000;
     font-size:12px;
     font-family:  "ヒラギノ角ゴ ProN W5", HiraKakuProN-W5, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
@@ -219,12 +225,12 @@ body{
 	display: block;
 	width: 250px;
 	position: fixed;
-	top: 30px;
+	top: 25px;
 	left: 30px;
 }
 
 .logo img{
-    width:100%;
+    width:90%;
     height:auto;
 }
 	
@@ -313,6 +319,7 @@ ul {
 		text-align: center;
 }
 }
+
 
 footer {
     color: #FFF;
