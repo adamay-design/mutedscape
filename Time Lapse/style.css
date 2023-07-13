@@ -21,13 +21,13 @@ body{
 }
 
 header {
-  height: 100px;
+  height: 90px;
   width: 100%;
   padding: 0;
   position: fixed;
   top: 0;
   display: flex;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
 }
 
 nav{
@@ -45,7 +45,7 @@ nav{
 	width: 250px;
 	position: fixed;
 	top: 30px;
-	left: 50px;
+	left: 40px;
 }
 
 .logo img{
@@ -142,7 +142,7 @@ footer {
 以下、ハンバーガーメニューの設定　
 ************************************/
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
 
 body{
     margin: 0;
@@ -154,69 +154,68 @@ body{
 
 .main-menu {
     display: none;
-	}
+    }
 
 .fas_sns_icon{
     display: none;
 }
 
 .logo{
-	display: block;
-	width: 250px;
-	position: fixed;
-	top: 30px;
-	left: 30px;
+    display: block;
+    width: 250px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
 }
 
 .logo img{
-    width:70%;
+    width:100%;
     height:auto;
 }
-	
+    
 #hamburger {
     background-color: transparent;  /*透明の背景*/
     position: absolute;             /*ハンバーガーの横線の位置を決めるための基準*/
     cursor: pointer;                /*リンクを示すカーソルを表示（指差しマーク）*/
-	top: 10px;
-	right: 20px;
+    top: 10px;
+    right: 10px;
     height: 40px;
-	width: 40px;                    /*高さと同じ幅*/
-	}
+    width: 40px;                    /*高さと同じ幅*/
+    }
 
 .icon span {
     position: absolute;       /*親要素である#hamburgerを基準に位置を指定*/
-	top: 20px;
-	right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
-    width: 20px;              /*横線の幅*/
-    height: 2px;              /*横線の高さ*/
+    top: 20px;
+    right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+    width: 30px;              /*横線の幅*/
+    height: 3px;              /*横線の高さ*/
     background-color: white;  /*横線を白色*/
-    /border-radius: 8px;       /*横線の両端の角に丸みを持たせる*/
     transition: ease 0.5s;   /*変化の時間（easeは初期値）*/
 }
 
 .icon span:nth-of-type(1) {
-    top: 18px;
+    top: 16px;
 }
 .icon span:nth-of-type(2) {
-    top: 27px;
+    top: 28px;
 }
-	
+    
 .icon span:nth-of-type(3) {
-    top: 36px;
+    top: 40px;
 }
 
 .close span:nth-of-type(1) {
     transform: rotate(45deg); /*反時計回りに45度回転*/
     top: 28px;
 }
-	
+    
 .close span:nth-of-type(2) {
     opacity: 0;
 }
 
 .close span:nth-of-type(3) {
-	transform: rotate(-45deg); /*時計回りに45度回転*/
-	top: 28px;
+    transform: rotate(-45deg); /*時計回りに45度回転*/
+    top: 28px;
 }
 
 .hamburger-list {
@@ -231,27 +230,27 @@ body{
 }
 
 .hamburger-list ul li {
-	text-align: center;
-	height: 50px; /*メニューの高さ*/
+    text-align: center;
+    height: 50px; /*メニューの高さ*/
 }
 
 nav.hamburger-list{
-	justify-content: center;
+    justify-content: center;
 }
 
 .hamburger-list ul li a {
-	height:0px;
+    height:0px;
     margin-left:0px;
     color:#FFF;
     text-decoration:none;
     letter-spacing:.1em;
-	padding: 5px 10px;
+    padding: 5px 10px;
 }
 
 .hamburger-list ul li a:hover {
-		background: #222;
-		height: 10rem;
-		text-align: center;
+        background: #222;
+        height: 10rem;
+        text-align: center;
 }
 
 ul {

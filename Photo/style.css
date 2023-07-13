@@ -21,13 +21,13 @@ body{
 }
 
 header {
-  height: 100px;
+  height: 90px;
   width: 100%;
   padding: 0;
   position: fixed;
   top: 0;
   display: flex;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
 }
 
 nav{
@@ -45,7 +45,7 @@ nav{
 	width: 250px;
 	position: fixed;
 	top: 30px;
-	left: 50px;
+	left: 40px;
 }
 
 .logo img{
@@ -87,7 +87,6 @@ nav{
     display: -moz-flex;
     display: flex;
 }
-
 .fas_sns_icon li{
 	list-style: none;
 	margin: 0 30px 0 0;
@@ -109,162 +108,19 @@ nav{
     display: -moz-flex;
     display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 }
 
 .hamburger-list {
     display: none;	/*ハンバーガーメニューのリスト（スマホ用）を非表示*/
 }
 
-.wrapper{
-    min-height:30vh;
-    position: relative;
-
-}
-
-footer {
-    color: #FFF;
-    padding: 10px;
-    font-family: "ヒラギノ角ゴ ProN W2";
-    font-size: 11px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-/**********************************　
-以下、ハンバーガーメニューの設定　
-************************************/
-
-@media (max-width: 1000px) {
-
-    body{
-        margin: 0;
-        min-width:960px;
-        background:#000;
-        font-size:12px;
-        font-family:  "ヒラギノ角ゴ ProN W5", HiraKakuProN-W5, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
-    }
-    
-    .main-menu {
-        display: none;
-        }
-    
-    .fas_sns_icon{
-        display: none;
-    }
-    
-    .logo{
-        display: block;
-        width: 250px;
-        position: fixed;
-        top: 30px;
-        left: 30px;
-    }
-    
-    .logo img{
-        width:70%;
-        height:auto;
-    }
-        
-    #hamburger {
-        background-color: transparent;  /*透明の背景*/
-        position: absolute;             /*ハンバーガーの横線の位置を決めるための基準*/
-        cursor: pointer;                /*リンクを示すカーソルを表示（指差しマーク）*/
-        top: 10px;
-        right: 20px;
-        height: 40px;
-        width: 40px;                    /*高さと同じ幅*/
-        }
-    
-    .icon span {
-        position: absolute;       /*親要素である#hamburgerを基準に位置を指定*/
-        top: 20px;
-        right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
-        width: 20px;              /*横線の幅*/
-        height: 2px;              /*横線の高さ*/
-        background-color: white;  /*横線を白色*/
-        /border-radius: 8px;       /*横線の両端の角に丸みを持たせる*/
-        transition: ease 0.5s;   /*変化の時間（easeは初期値）*/
-    }
-    
-    .icon span:nth-of-type(1) {
-        top: 18px;
-    }
-    .icon span:nth-of-type(2) {
-        top: 27px;
-    }
-        
-    .icon span:nth-of-type(3) {
-        top: 36px;
-    }
-    
-    .close span:nth-of-type(1) {
-        transform: rotate(45deg); /*反時計回りに45度回転*/
-        top: 28px;
-    }
-        
-    .close span:nth-of-type(2) {
-        opacity: 0;
-    }
-    
-    .close span:nth-of-type(3) {
-        transform: rotate(-45deg); /*時計回りに45度回転*/
-        top: 28px;
-    }
-    
-    .hamburger-list {
-        font-size:20px;
-        top: 80px;  /*headerの余白分*/
-        left: 0px;  /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.hamburger-listは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
-        position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
-        z-index: 10;
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(0, 0, 0);
-    }
-    
-    .hamburger-list ul li {
-        text-align: center;
-        height: 50px; /*メニューの高さ*/
-    }
-    
-    nav.hamburger-list{
-        justify-content: center;
-    }
-    
-    .hamburger-list ul li a {
-        height:0px;
-        margin-left:0px;
-        color:#FFF;
-        text-decoration:none;
-        letter-spacing:.1em;
-        padding: 5px 10px;
-    }
-    
-    .hamburger-list ul li a:hover {
-            background: #222;
-            height: 10rem;
-            text-align: center;
-    }
-    
-    ul {
-            flex-direction: column;
-            text-align: center;
-    }
-    
-      a {
-        text-align: left; 
-      }
-    }
-
-
 /*==================================================
 ギャラリーのためのcss
 ===================================*/
 .gallery{
     columns: 4;/*段組みの数*/
-    padding:20px;/*ギャラリー左右に余白をつける*/
+    padding: 20px;/*ギャラリー左右に余白をつける*/
     margin-top: 80px;
     }
     
@@ -292,3 +148,144 @@ footer {
         columns: 2;
         }	
 }
+
+.wrapper{
+    min-height:30vh;
+    position: relative;
+
+}
+
+footer {
+    color: #FFF;
+    padding: 10px;
+    font-family: "ヒラギノ角ゴ ProN W2";
+    font-size: 11px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/**********************************　
+以下、ハンバーガーメニューの設定　
+************************************/
+
+@media (max-width: 960px) {
+
+body{
+    margin: 0;
+    min-width:960px;
+    background:#000;
+    font-size:12px;
+    font-family:  "ヒラギノ角ゴ ProN W5", HiraKakuProN-W5, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+}
+
+.main-menu {
+    display: none;
+    }
+
+.fas_sns_icon{
+    display: none;
+}
+
+.logo{
+    display: block;
+    width: 250px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.logo img{
+    width:100%;
+    height:auto;
+}
+    
+#hamburger {
+    background-color: transparent;  /*透明の背景*/
+    position: absolute;             /*ハンバーガーの横線の位置を決めるための基準*/
+    cursor: pointer;                /*リンクを示すカーソルを表示（指差しマーク）*/
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;                    /*高さと同じ幅*/
+    }
+
+.icon span {
+    position: absolute;       /*親要素である#hamburgerを基準に位置を指定*/
+    top: 20px;
+    right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+    width: 30px;              /*横線の幅*/
+    height: 3px;              /*横線の高さ*/
+    background-color: white;  /*横線を白色*/
+    transition: ease 0.5s;   /*変化の時間（easeは初期値）*/
+}
+
+.icon span:nth-of-type(1) {
+    top: 16px;
+}
+.icon span:nth-of-type(2) {
+    top: 28px;
+}
+    
+.icon span:nth-of-type(3) {
+    top: 40px;
+}
+
+.close span:nth-of-type(1) {
+    transform: rotate(45deg); /*反時計回りに45度回転*/
+    top: 28px;
+}
+    
+.close span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.close span:nth-of-type(3) {
+    transform: rotate(-45deg); /*時計回りに45度回転*/
+    top: 28px;
+}
+
+.hamburger-list {
+    font-size:20px;
+    top: 80px;  /*headerの余白分*/
+    left: 0px;  /*headerの余白分　ヘッダーには左右に15px余白があるので、headerの子要素となる.hamburger-listは15px分内側に設置されます。その余白を埋めるために左に寄せる。*/
+    position: absolute; /*絶対配置　top　leftからの位置を絶対配置する*/
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+}
+
+.hamburger-list ul li {
+    text-align: center;
+    height: 50px; /*メニューの高さ*/
+}
+
+nav.hamburger-list{
+    justify-content: center;
+}
+
+.hamburger-list ul li a {
+    height:0px;
+    margin-left:0px;
+    color:#FFF;
+    text-decoration:none;
+    letter-spacing:.1em;
+    padding: 5px 10px;
+}
+
+.hamburger-list ul li a:hover {
+        background: #222;
+        height: 10rem;
+        text-align: center;
+}
+    
+    ul {
+            flex-direction: column;
+            text-align: center;
+    }
+    
+      a {
+        text-align: left; 
+      }
+    }
