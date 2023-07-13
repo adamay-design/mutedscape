@@ -46,7 +46,7 @@ nav{
 	width: 250px;
 	position: fixed;
 	top: 30px;
-	left: 50px;
+	left: 30px;
 }
 
 .logo img{
@@ -197,7 +197,7 @@ nav{
 以下、ハンバーガーメニューの設定　
 ************************************/
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
 
 body{
     margin: 0;
@@ -217,9 +217,9 @@ body{
 
 .logo{
 	display: block;
-	width: 300px;
+	width: 250px;
 	position: fixed;
-	top: 25px;
+	top: 30px;
 	left: 30px;
 }
 
