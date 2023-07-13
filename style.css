@@ -22,7 +22,7 @@ body{
 }
 
 header {
-  height: 100px;
+  height: 90px;
   width: 100%;
   padding: 0;
   position: fixed;
@@ -172,7 +172,7 @@ nav{
   @media screen and (min-width: 768px) {
     /* kv */
     .kv{
-      min-width: 960px;
+      min-width: 768px;
     }
   
     .kv .main-copy{
@@ -185,7 +185,7 @@ nav{
   
     /* video */
     .video{
-      min-width: 960px;
+      min-width: 768px;
     }
   }
 
@@ -245,7 +245,6 @@ body{
     width: 30px;              /*横線の幅*/
     height: 3px;              /*横線の高さ*/
     background-color: white;  /*横線を白色*/
-    /border-radius: 8px;       /*横線の両端の角に丸みを持たせる*/
     transition: ease 0.5s;   /*変化の時間（easeは初期値）*/
 }
 
