@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Mutedscape</title>
+    <script src="jquery-3.7.0.min.js"></script> <!—jQueryのファイルの読み込み—>
+    <link rel="stylesheet" href="./css/all.min.css">
+  </head>
+  
+  <body>
+    <header>
+      
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="images/logo.mutedscape.png">
+        </a>
+      </nav>
+        
+<!--▽▽ハンバーガーメニュー▽▽-->
+        <div id="hamburger">
+          <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+        </div>
+        <script>
+          $('#hamburger').on('click', function(){
+          $('.icon').toggleClass('close');
+          $('.hamburger-list').slideToggle();
+          });
+        </script>
+<!--△△ハンバーガーメニュー△△-->
+        
+<!--▽▽ハンバーガーメニューのリスト▽▽-->
+        <nav class="hamburger-list">
+          <ul>
+            <li><a href="About/about.html">About</a></li>
+            <li><a href="Time Lapse/timelapse.html">TimeLapse</a></li>
+            <li><a href="Photo/photo.html">Photo</a></li>
+            <li><a href="Map/map.html">Map</a></li>
+            <li><a href="https://instagram.com/intent/tweet?text={ページタイトル}&url={URL}" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://b.hatena.ne.jp/add?mode=confirm&url={URL}&title={ページタイトル}" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </nav> 
+<!--△△ハンバーガーメニューのリスト△△-->
+
+<!--▽▽ヘッダーリスト▽▽-->
+        <nav class="main-menu">
+          <ul>
+            <li><a href="About/about.html">About</a></li>
+            <li><a href="Time Lapse/timelapse.html">TimeLapse</a></li>
+            <li><a href="Photo/photo.html">Photo</a></li>
+            <li><a href="Map/map.html">Map</a></li>
+          </ul>
+        </nav>
+        <ul class="fas_sns_icon">
+          <li><a href="https://instagram.com/intent/tweet?text={ページタイトル}&url={URL}" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="http://b.hatena.ne.jp/add?mode=confirm&url={URL}&title={ページタイトル}" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+<!--△△ヘッダーリスト△△-->
+
+    </header>
+    
+        <div class="kv">
+          <div class="catch-copy">
+              <p class="main-copy"></p>
+              <p class="sub-copy"></p>
+          </div>
+        </div>
+        
+        <div class="video">
+          <video src="video/web-haikei.mp4" autoplay loop muted playsinlin></video>
+        </div>
+
+      <main>
+      </main>
+
+      <footer>
+        <p>&copy; Copyright 2023 Mutedscape</p>
+      </footer>
+
+  </body>
+</html>

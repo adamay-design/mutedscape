@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+      <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/6-2-1.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <title>Mutedscape</title>
+      </head>
+      
+      <body>
+    
+        <header>
+      
+          <nav>
+            <a href="../index.html" class="logo">
+              <img src="images/logo.mutedscape.png">
+            </a>
+        
+<!--▽▽ハンバーガーメニュー▽▽-->
+          <div id="hamburger">
+              <div class="icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+<!--△△ハンバーガーメニュー△△-->
+        
+<!--▽▽ハンバーガーメニューのリスト▽▽-->
+          <nav class="hamburger-list">
+            <ul>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Time Lapse/timelapse.html">TimeLapse</a></li>
+              <li><a href="../Photo/photo.html">Photo</a></li>
+              <li><a href="../Map/map.html">Map</a></li>
+              <li><a href="https://instagram.com/intent/tweet?text={ページタイトル}&url={URL}" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="http://b.hatena.ne.jp/add?mode=confirm&url={URL}&title={ページタイトル}" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </nav> 
+          <!--△△ハンバーガーメニューのリスト△△-->
+
+          <!--▽▽ヘッダーリスト▽▽-->
+          <nav class="main-menu">
+            <ul>
+              <li><a href="../About/about.html">About</a></li>
+              <li><a href="../Time Lapse/timelapse.html">TimeLapse</a></li>
+              <li><a href="../Photo/photo.html">Photo</a></li>
+              <li><a href="../Map/map.html">Map</a></li>
+            </ul>
+          </nav>
+          <ul class="fas_sns_icon">
+            <li><a href="https://instagram.com/intent/tweet?text={ページタイトル}&url={URL}" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="http://b.hatena.ne.jp/add?mode=confirm&url={URL}&title={ページタイトル}" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+          <!--△△ヘッダーリスト△△-->
+
+                </header>
+              
+          <script src="jquery-3.7.0.min.js"></script> <!—jQueryのファイルの読み込み—>
+          <script>
+            $('#hamburger').on('click', function(){
+                $('.icon').toggleClass('close');
+                $('.hamburger-list').slideToggle();
+            });
+          </script>
+      
+      <main>
+
+          <article>
+            <ul class="gallery">
+              <li><a href="images/DSC01505.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC01505.jpg" alt=""></a></li>
+              <li><a href="images/DSC01506.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC01506.jpg" alt=""></a></li>
+              <li><a href="images/DSC07239.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC07239.jpg" alt=""></a></li>
+              <li><a href="images/DSC07518.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC07518.jpg" alt=""></a></li>
+              <li><a href="images/DSC00901.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC00901.jpg" alt=""></a></li>
+              <li><a href="images/DSC00933.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC00933.jpg" alt=""></a></li>
+              <li><a href="images/DSC00949.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC00949.jpg" alt=""></a></li>
+              <li><a href="images/DSC00951.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC00951.jpg" alt=""></a></li>
+              <li><a href="images/DSC1052.jpg" data-lightbox="gallery1" data-title="キャプション"><img src="images/DSC1052.jpg" alt=""></a></li>
+            </ul>
+           </article> 
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+            <!--自作のJS-->
+            <script src="js/6-2-1.js"></script>
+      </main>
+       
+            <div class="wrapper">
+              <footer>
+                <p>&copy; Copyright 2023 Mutedscape</p>
+              </footer>
+            </div>
+  </body>
+</html>
