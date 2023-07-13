@@ -18,6 +18,7 @@ body{
 	background:#000;
 	font-size:15px;
 	font-family:  "ヒラギノ角ゴ ProN W5", HiraKakuProN-W5, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+    text-size-adjust: none;
 }
 
 header {
@@ -226,7 +227,7 @@ body{
 }
 
 .logo img{
-    width:70%;
+    width:100%;
     height:auto;
 }
 	
@@ -235,7 +236,7 @@ body{
     position: absolute;             /*ハンバーガーの横線の位置を決めるための基準*/
     cursor: pointer;                /*リンクを示すカーソルを表示（指差しマーク）*/
 	top: 10px;
-	right: 20px;
+	right: 10px;
     height: 40px;
 	width: 40px;                    /*高さと同じ幅*/
 	}
@@ -244,22 +245,22 @@ body{
     position: absolute;       /*親要素である#hamburgerを基準に位置を指定*/
 	top: 20px;
 	right: 10px;               /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
-    width: 20px;              /*横線の幅*/
-    height: 2px;              /*横線の高さ*/
+    width: 30px;              /*横線の幅*/
+    height: 3px;              /*横線の高さ*/
     background-color: white;  /*横線を白色*/
     /border-radius: 8px;       /*横線の両端の角に丸みを持たせる*/
     transition: ease 0.5s;   /*変化の時間（easeは初期値）*/
 }
 
 .icon span:nth-of-type(1) {
-    top: 18px;
+    top: 16px;
 }
 .icon span:nth-of-type(2) {
-    top: 27px;
+    top: 28px;
 }
 	
 .icon span:nth-of-type(3) {
-    top: 36px;
+    top: 40px;
 }
 
 .close span:nth-of-type(1) {
